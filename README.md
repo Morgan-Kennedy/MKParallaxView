@@ -15,7 +15,11 @@ To create the parallax view with a <b>basic</b> background image do the followin
 To create the parallax view with a <b>repeat</b> background image do the following:
 
 <code>MKParallaxView *repeatBackgound = [[MKParallaxView alloc] initWithFrame:self.frame];</code>
-<code>repeatBackgound.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"backgroundImage.png"]];</code>
+<code>repeatBackgound.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"backgroundRepeatableImage.png"]];</code>
+
+The animation defaults at 60 frames per second (fps) which is really smooth, but if you want to bring it down to say 30 fps, just do the following on each MKParallaxView you have:
+
+<code>basicBackground.updateRate = 30;</code>
 
 I hope you enjoy this framework. Please <b>star</b> it above; and if your iTunes app uses it, please <b>add it to the list</b> on the wiki along with an iTunes link.
 

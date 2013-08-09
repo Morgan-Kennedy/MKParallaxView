@@ -29,7 +29,7 @@
 #import "MKParallaxView.h"
 #import "MKParallaxManager.h"
 
-#define defaultUpdateRate 30
+#define defaultUpdateRate 60
 
 @interface MKParallaxView()
 
