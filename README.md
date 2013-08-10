@@ -5,6 +5,10 @@ MKParallaxView is an easy to use framework used to create the IOS 7 Parallax Eff
 
 Treat it just like a UIImageView and by simply assigning an image to it with 1 line you have the exact same effect for the background of your app.
 
+To start go to <b>Project</b> -> <b>Target</b> -> <b>Build Phases</b> -> <b>Link Binary With Libraries</b> and add <b>CoreMotion.framework</b>
+
+In the view or view controller (or prefix):
+
 <code>#import "MKParallaxView.h"</code>
 
 To create the parallax view with a <b>basic</b> background image do the following:
@@ -28,3 +32,21 @@ Thank you,
 Kind Regards
 
 Morgan Kennedy
+
+p.s. If you want you can utilize the MKGyroManager as is:
+
+MKGyroManager
+==============
+
+If you want to use the "roll" "pitch" "yaw" values that the gyro manager (singleton) spits out 60 times a second anywhere else in your app you can by doing the following:
+
+<code>#import "MKGyroManager.h"</code><br />
+<code>@interface MyViewController ()< MKGyroManagerDelegate ></code><br />
+<code>[MKGyroManager sharedGyroManager].delegate = self;</code><br />
+<code>- (void)MKGyroManagerUpdatedRoll:(CGFloat)roll Pitch:(CGFloat)pitch Yaw:(CGFloat)yaw</code><br />
+
+There's also a NSNotification that you can listen to if you prefer with the values in the <code>notification.userInfo</code><br />
+<code>MKGyroManagerUpdateAnglesNotification</code>
+
+Or you can just observe the latestValue of a specific attribute like so:<br />
+<code>CGFloat roll = [[MKGyroManager sharedGyroManager] roll];</code>
