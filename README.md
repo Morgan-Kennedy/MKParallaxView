@@ -25,15 +25,6 @@ The animation defaults at 60 frames per second (fps) which is really smooth, but
 
 <code>basicBackground.updateRate = 30;</code>
 
-If you want to utilize the "roll" "pitch" "yaw" values that the gyro manager (singleton) spits out 60 times a second anywhere else in your app you can by doing the following:
-
-<code>#import "MKGyroManager.h"</code><br />
-<code>@interface MyViewController ()< MKGyroManagerDelegate ></code><br />
-<code>[MKGyroManager sharedGyroManager].delegate = self;</code><br />
-<code>- (void)MKGyroManagerUpdatedRoll:(CGFloat)roll Pitch:(CGFloat)pitch Yaw:(CGFloat)yaw</code><br />
-
-There's also a NSNotification that you can listen to if you prefer.
-
 I hope you enjoy this framework. Please <b>star</b> it above; and if your iTunes app uses it, please <b>add it to the list</b> on the wiki along with an iTunes link.
 
 Thank you,
@@ -41,3 +32,21 @@ Thank you,
 Kind Regards
 
 Morgan Kennedy
+
+p.s. If you want you can utilize the MKGyroManager as is:
+
+MKGyroManager
+==============
+
+If you want to use the "roll" "pitch" "yaw" values that the gyro manager (singleton) spits out 60 times a second anywhere else in your app you can by doing the following:
+
+<code>#import "MKGyroManager.h"</code><br />
+<code>@interface MyViewController ()< MKGyroManagerDelegate ></code><br />
+<code>[MKGyroManager sharedGyroManager].delegate = self;</code><br />
+<code>- (void)MKGyroManagerUpdatedRoll:(CGFloat)roll Pitch:(CGFloat)pitch Yaw:(CGFloat)yaw</code><br />
+
+There's also a NSNotification that you can listen to if you prefer with the values in the <code>notification.userInfo</code><br />
+<code>MKGyroManagerUpdateAnglesNotification</code>
+
+Or you can just observe the latestValue of a specific attribute like so:<br />
+<code>CGFloat roll = [[MKGyroManager sharedGyroManager] roll];</code>
