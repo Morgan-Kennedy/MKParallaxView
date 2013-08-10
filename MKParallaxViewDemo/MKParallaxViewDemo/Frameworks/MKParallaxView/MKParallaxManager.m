@@ -38,9 +38,6 @@
 #define sizePercentPadding 0.0163f
 
 @interface MKParallaxManager()
-
-@property (nonatomic, strong) UIViewController *orientationController;
-
 /**
  Generates the current Frame based on the front facing angle and sideways tilt
  as well as the frame size
@@ -66,7 +63,6 @@
     if (self)
     {
         [MKGyroManager sharedGyroManager];
-        _orientationController = [[UIViewController alloc] init];
     }
     
     return self;
@@ -82,17 +78,19 @@
     CGFloat frontAngle = zeroPointV;
     CGFloat sideTilt = zeroPointH;
     
-    if (self.orientationController.interfaceOrientation == UIInterfaceOrientationLandscapeRight)
+    UIViewController *orientationController = [[UIViewController alloc] init];
+    
+    if (orientationController.interfaceOrientation == UIInterfaceOrientationLandscapeRight)
     {
         frontAngle = roll * -1;
         sideTilt = pitch;
     }
-    else if (self.orientationController.interfaceOrientation == UIInterfaceOrientationLandscapeLeft)
+    else if (orientationController.interfaceOrientation == UIInterfaceOrientationLandscapeLeft)
     {
         frontAngle = roll;
         sideTilt = pitch * -1;
     }
-    else if (self.orientationController.interfaceOrientation == UIInterfaceOrientationPortraitUpsideDown)
+    else if (orientationController.interfaceOrientation == UIInterfaceOrientationPortraitUpsideDown)
     {
         frontAngle = pitch * -1;
         sideTilt = roll * -1;

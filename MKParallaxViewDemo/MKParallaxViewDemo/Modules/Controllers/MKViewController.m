@@ -8,7 +8,6 @@
 
 #import "MKViewController.h"
 #import "MKView.h"
-#import "MKGyroManager.h"
 
 #define mkView ((MKView *) [self view])
 

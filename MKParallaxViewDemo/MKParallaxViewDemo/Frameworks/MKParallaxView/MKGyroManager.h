@@ -39,14 +39,6 @@
 
 @optional
 /**
- Triggers each time the rotation rate values are updated
- @param x value as a double
- @param y value as a double
- @param z value as a double
- */
-- (void)MKGyroManagerUpdatedX:(double)x Y:(double)y Z:(double)z;
-
-/**
  Triggers each time the angles are calculated
  @param roll value as a float
  @param pitch value as a float
@@ -65,17 +57,17 @@
 /**
  The last recorded Roll Value
  */
-@property (nonatomic, assign) CGFloat roll;
+@property (nonatomic, assign, readonly) CGFloat roll;
 
 /**
  The last recorded Pitch Value
  */
-@property (nonatomic, assign) CGFloat pitch;
+@property (nonatomic, assign, readonly) CGFloat pitch;
 
 /**
  The last recorded Yaw Value
  */
-@property (nonatomic, assign) CGFloat yaw;
+@property (nonatomic, assign, readonly) CGFloat yaw;
 
 /**
  Initialises the gyro manager as a singleton
