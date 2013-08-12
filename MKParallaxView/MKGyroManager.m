@@ -89,9 +89,9 @@
     CMDeviceMotion *motion = self.motionManager.deviceMotion;
     CMAttitude *attitude = motion.attitude;
     
-    self.roll = degrees(attitude.roll);
-    self.pitch = degrees(attitude.pitch);
-    self.yaw = degrees(attitude.yaw);
+    _roll = degrees(attitude.roll);
+    _pitch = degrees(attitude.pitch);
+    _yaw = degrees(attitude.yaw);
     
     if (self.delegate && [self.delegate respondsToSelector:@selector(MKGyroManagerUpdatedRoll:Pitch:Yaw:)])
     {
