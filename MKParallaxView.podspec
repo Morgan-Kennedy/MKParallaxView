@@ -38,7 +38,7 @@ Pod::Spec.new do |s|
   						LICENSE
   						}
   s.author       	= { "Morgan Kennedy" => "morgan.j.kennedy@gmail.com" }
-  s.platform     	= :ios, '4.0'
+  s.platform     	= :ios, '5.0'
   s.source       	= { :git => "https://github.com/Morgan-Kennedy/MKParallaxView.git", :tag => "1.1" }
   s.source_files  	= 'MKParallaxView/**/*.{h,m}'
   s.framework  		= 'CoreMotion.framework'
