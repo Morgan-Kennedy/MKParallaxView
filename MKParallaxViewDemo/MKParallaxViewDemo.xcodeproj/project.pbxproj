@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8E29BB42179B68C500990B1B /* MKGyroManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E29BB28179B68C500990B1B /* MKGyroManager.m */; };
-		8E29BB43179B68C500990B1B /* MKParallaxManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E29BB2A179B68C500990B1B /* MKParallaxManager.m */; };
-		8E29BB44179B68C500990B1B /* MKParallaxView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E29BB2C179B68C500990B1B /* MKParallaxView.m */; };
 		8E29BB45179B68C500990B1B /* SQLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E29BB2F179B68C500990B1B /* SQLayout.m */; };
 		8E29BB46179B68C500990B1B /* blue-dots.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8E29BB35179B68C500990B1B /* blue-dots.jpg */; };
 		8E29BB47179B68C500990B1B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E29BB36179B68C500990B1B /* Default-568h@2x.png */; };
@@ -26,15 +23,12 @@
 		8E4749C1179B650C00E1B4B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E4749C0179B650C00E1B4B1 /* Foundation.framework */; };
 		8E4749C3179B650C00E1B4B1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E4749C2179B650C00E1B4B1 /* CoreGraphics.framework */; };
 		8E50048E17B56B2500E7B352 /* NSTexturedFullScreenBackgroundColor.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E50048D17B56B2500E7B352 /* NSTexturedFullScreenBackgroundColor.png */; };
+		8E671EA917CC89AB00E728B3 /* MKGyroManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E671EA417CC89AB00E728B3 /* MKGyroManager.m */; };
+		8E671EAA17CC89AB00E728B3 /* MKParallaxManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E671EA617CC89AB00E728B3 /* MKParallaxManager.m */; };
+		8E671EAB17CC89AB00E728B3 /* MKParallaxView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E671EA817CC89AB00E728B3 /* MKParallaxView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8E29BB27179B68C500990B1B /* MKGyroManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKGyroManager.h; sourceTree = "<group>"; };
-		8E29BB28179B68C500990B1B /* MKGyroManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKGyroManager.m; sourceTree = "<group>"; };
-		8E29BB29179B68C500990B1B /* MKParallaxManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKParallaxManager.h; sourceTree = "<group>"; };
-		8E29BB2A179B68C500990B1B /* MKParallaxManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKParallaxManager.m; sourceTree = "<group>"; };
-		8E29BB2B179B68C500990B1B /* MKParallaxView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKParallaxView.h; sourceTree = "<group>"; };
-		8E29BB2C179B68C500990B1B /* MKParallaxView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKParallaxView.m; sourceTree = "<group>"; };
 		8E29BB2E179B68C500990B1B /* SQLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLayout.h; sourceTree = "<group>"; };
 		8E29BB2F179B68C500990B1B /* SQLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLayout.m; sourceTree = "<group>"; };
 		8E29BB35179B68C500990B1B /* blue-dots.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "blue-dots.jpg"; sourceTree = "<group>"; };
@@ -57,6 +51,12 @@
 		8E4749C0179B650C00E1B4B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8E4749C2179B650C00E1B4B1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		8E50048D17B56B2500E7B352 /* NSTexturedFullScreenBackgroundColor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NSTexturedFullScreenBackgroundColor.png; sourceTree = "<group>"; };
+		8E671EA317CC89AB00E728B3 /* MKGyroManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKGyroManager.h; sourceTree = "<group>"; };
+		8E671EA417CC89AB00E728B3 /* MKGyroManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKGyroManager.m; sourceTree = "<group>"; };
+		8E671EA517CC89AB00E728B3 /* MKParallaxManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKParallaxManager.h; sourceTree = "<group>"; };
+		8E671EA617CC89AB00E728B3 /* MKParallaxManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKParallaxManager.m; sourceTree = "<group>"; };
+		8E671EA717CC89AB00E728B3 /* MKParallaxView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKParallaxView.h; sourceTree = "<group>"; };
+		8E671EA817CC89AB00E728B3 /* MKParallaxView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKParallaxView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,23 +77,10 @@
 		8E29BB25179B68C500990B1B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8E29BB26179B68C500990B1B /* MKParallaxView */,
+				8E671EA217CC89AB00E728B3 /* MKParallaxView */,
 				8E29BB2D179B68C500990B1B /* SQLayout */,
 			);
 			path = Frameworks;
-			sourceTree = "<group>";
-		};
-		8E29BB26179B68C500990B1B /* MKParallaxView */ = {
-			isa = PBXGroup;
-			children = (
-				8E29BB27179B68C500990B1B /* MKGyroManager.h */,
-				8E29BB28179B68C500990B1B /* MKGyroManager.m */,
-				8E29BB29179B68C500990B1B /* MKParallaxManager.h */,
-				8E29BB2A179B68C500990B1B /* MKParallaxManager.m */,
-				8E29BB2B179B68C500990B1B /* MKParallaxView.h */,
-				8E29BB2C179B68C500990B1B /* MKParallaxView.m */,
-			);
-			path = MKParallaxView;
 			sourceTree = "<group>";
 		};
 		8E29BB2D179B68C500990B1B /* SQLayout */ = {
@@ -212,6 +199,20 @@
 			path = MKParallaxViewDemo;
 			sourceTree = "<group>";
 		};
+		8E671EA217CC89AB00E728B3 /* MKParallaxView */ = {
+			isa = PBXGroup;
+			children = (
+				8E671EA317CC89AB00E728B3 /* MKGyroManager.h */,
+				8E671EA417CC89AB00E728B3 /* MKGyroManager.m */,
+				8E671EA517CC89AB00E728B3 /* MKParallaxManager.h */,
+				8E671EA617CC89AB00E728B3 /* MKParallaxManager.m */,
+				8E671EA717CC89AB00E728B3 /* MKParallaxView.h */,
+				8E671EA817CC89AB00E728B3 /* MKParallaxView.m */,
+			);
+			name = MKParallaxView;
+			path = ../../../MKParallaxView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -281,14 +282,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E29BB42179B68C500990B1B /* MKGyroManager.m in Sources */,
-				8E29BB43179B68C500990B1B /* MKParallaxManager.m in Sources */,
-				8E29BB44179B68C500990B1B /* MKParallaxView.m in Sources */,
 				8E29BB45179B68C500990B1B /* SQLayout.m in Sources */,
 				8E29BB4B179B68C500990B1B /* main.m in Sources */,
 				8E29BB4D179B68C500990B1B /* MKAppDelegate.m in Sources */,
 				8E29BB52179B6ABD00990B1B /* MKViewController.m in Sources */,
 				8E29BB55179B6AE400990B1B /* MKView.m in Sources */,
+				8E671EA917CC89AB00E728B3 /* MKGyroManager.m in Sources */,
+				8E671EAA17CC89AB00E728B3 /* MKParallaxManager.m in Sources */,
+				8E671EAB17CC89AB00E728B3 /* MKParallaxView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
