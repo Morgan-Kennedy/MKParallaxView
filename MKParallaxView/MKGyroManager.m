@@ -82,7 +82,24 @@
     return self;
 }
 
-#pragma mark - 
+#pragma mark -
+#pragma mark - Public Methods
+- (void)stopGyro
+{
+    [self.timer invalidate];
+    self.timer = nil;
+}
+
+- (void)startGyro
+{
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:defaultHertz
+                                              target:self
+                                            selector:@selector(retrieveAngles)
+                                            userInfo:nil
+                                             repeats:YES];
+}
+
+#pragma mark -
 #pragma mark - Private Methods
 - (void)retrieveAngles
 {

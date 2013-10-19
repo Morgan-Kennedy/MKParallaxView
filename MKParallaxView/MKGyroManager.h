@@ -74,6 +74,17 @@
  */
 + (MKGyroManager *)sharedGyroManager;
 
+/**
+ Stops the gyro manager from reading the gyro when you don't need it
+ note: on first initialise the gyro is started
+ */
+- (void)stopGyro;
+
+/**
+ Start the gyro up again
+ */
+- (void)startGyro;
+
 @end
 
 /**
