@@ -95,6 +95,7 @@
     _parallaxImageView = [[UIImageView alloc] initWithFrame:[_parallaxManager parallexFrameWithViewFrame:_frameScrollView.frame]];
     _parallaxImageView.backgroundColor = [UIColor clearColor];
     _parallaxImageView.contentMode = UIViewContentModeScaleAspectFill;
+    _parallaxImageView.clipsToBounds = YES;
     
     _updateTimer = [NSTimer scheduledTimerWithTimeInterval:(1.0f / self.updateRate)
                                                     target:self
