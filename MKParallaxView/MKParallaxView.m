@@ -82,7 +82,6 @@
 - (void)initCommon
 {
     _backgroundShouldRepeat = NO;
-    _backgroundImage = nil;
     
     self.backgroundColor = [UIColor clearColor];
     
@@ -117,6 +116,21 @@
 
 #pragma mark -
 #pragma mark - Overriding Methods
+- (UIColor *)backgroundColor
+{
+    return self.parallaxImageView.backgroundColor;
+}
+
+- (UIImage *)backgroundImage
+{
+    return self.parallaxImageView.image;
+}
+
+- (UIViewContentMode)contentMode
+{
+    return self.parallaxImageView.contentMode;
+}
+
 - (void)setBackgroundColor:(UIColor *)backgroundColor
 {
     self.parallaxImageView.backgroundColor = backgroundColor;
