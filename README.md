@@ -5,6 +5,10 @@ MKParallaxView is an easy to use framework used to create the IOS 7 Parallax Eff
 
 Treat it just like a UIImageView and by simply assigning an image to it with 1 line you have the exact same effect for the background of your app.
 
+UPDATES:
+- Storyboard Friendly (Thanks Kinwo)
+- Overridden Getters for parameters (Thanks Augard)
+
 MKParallaxView is now a CocoaPod! so jump to http://cocoapods.org/ to get it that way :)
 
 Important note: this framework uses the device's gyro, so it will look just like a normal background in simulators. Try the demo on a device instead!
