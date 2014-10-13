@@ -16,8 +16,7 @@
     "ios": "5.0"
   },
   "source": {
-    "git": "https://github.com/noelrocha/MKParallaxView.git",
-    "tag": "1.1.0"
+    "git": "https://github.com/noelrocha/MKParallaxView.git"
   },
   "source_files": "MKParallaxView/**/*.{h,m}",
   "frameworks": "CoreMotion",
