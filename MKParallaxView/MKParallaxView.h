@@ -42,6 +42,11 @@
 @property (nonatomic, assign) BOOL backgroundShouldRepeat;
 
 /**
+ The image view that sits within the frame of the view and shifts with the Gyro
+ */
+@property (nonatomic, strong) UIImageView *parallaxImageView;
+
+/**
  The rate at which the parallax view updates itself 
  (think of it like frames per second)
  Default is 60
