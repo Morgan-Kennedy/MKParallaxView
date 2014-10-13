@@ -16,7 +16,7 @@
     "ios": "5.0"
   },
   "source": {
-    "git": "https://github.com/Morgan-Kennedy/MKParallaxView.git",
+    "git": "https://github.com/noelrocha/MKParallaxView.git",
     "tag": "1.1.0"
   },
   "source_files": "MKParallaxView/**/*.{h,m}",
