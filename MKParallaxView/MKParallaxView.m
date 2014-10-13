@@ -39,11 +39,6 @@
 @property (nonatomic, strong) UIScrollView *frameScrollView;
 
 /**
- The image view that sits within the frame of the view and shifts with the Gyro
- */
-@property (nonatomic, strong) UIImageView *parallaxImageView;
-
-/**
  External manager handeling the logic of the Parallax effect
  */
 @property (nonatomic, strong) MKParallaxManager *parallaxManager;
@@ -109,8 +104,8 @@
     [super layoutSubviews];
     
     self.frameScrollView.frame = CGRectMake(0, 0, self.frame.size.width, self.frame.size.height);
-    [self addSubview:self.frameScrollView];
-    
+    [self insertSubview:self.frameScrollView belowSubview:[self.subviews objectAtIndex:0]] ; 
+
     [self updateParallaxImage];
     [self.frameScrollView addSubview:self.parallaxImageView];
 }
